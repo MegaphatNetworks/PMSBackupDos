@@ -4,7 +4,7 @@
 #### This couldn't be any easier.
 It's a batch file to make a complete backup of your Plex Media Server (PMS) on Windows.
 
-THIS SCRIPT will ONLY back up your Plex Server Settings!  No Media will be backed up from this process!  Why?  I have a SAN (Storage Attached Network) with my media on it.  It connects via fiber channel.  If my Plex server drops dead, I can rebuild a computer to run Plex and my media is safe, but ALL of my Plex settings are GONE!  But with a little USB stick? Just reinstall Plex, then  Restore the contents to my "%LocalAppData%\Plex Media Server\" folder (Yes you can issue a command 'Explorer "%LocalAppData%\Plex Media Server\" ' and Windows Explorer will open there!  The backup will have the configuration from the disk as well as the registry entries.  There will be a .reg file.  Just double click to import AFTER restoring the 7Zip files.
+#### *THIS SCRIPT* will ONLY back up your Plex Server Settings!  No Media will be backed up from this process!  Why?  I have a SAN (Storage Attached Network) with my media on it.  It connects via fiber channel.  If my Plex server drops dead, I can rebuild a computer to run Plex and my media is safe, but ALL of my Plex settings are GONE!  But with a little USB stick? Just reinstall Plex, then  Restore the contents to my "%LocalAppData%\Plex Media Server\" folder (Yes you can issue a command 'Explorer "%LocalAppData%\Plex Media Server\" ' and Windows Explorer will open there!  The backup will have the configuration from the disk as well as the registry entries.  There will be a .reg file.  Just double click to import AFTER restoring the 7Zip files.
 ---
 ## REQUIREMENTS
 #### 7Zip - must have it to use.
@@ -20,7 +20,7 @@ Next, be sure you run this script ONLY as the user which Plex is running under. 
 - Alfie
 - Plex
 
-Clearly Plex is the account that has Plex Media Server installed and running.  Therefore the script should ONLY run under this account!  I have my script running weekly.  It takes about 30 minutes and consumes about 9.3GB on my thumb drive.  
+#### Clearly Plex is the account that has Plex Media Server installed and running.  Therefore the script should ONLY run under this account!  I have my script running weekly.  It takes about 30 minutes and consumes about 9.3GB on my thumb drive.  
 ---
 #### 
 I created a scheduled task to automate the execution weekly.  Again the scheduled task is created as the Plex user, configured to execute whether or not the user is logged in.  
