@@ -1,13 +1,13 @@
 # PMSBackupDos
 ## Plex Media Server Backup (MS DOS Version)
 
-This couldn't be any easier.
+### This couldn't be any easier.
 It's a batch file to make a complete backup of your Plex Media Server (PMS) on Windows.
 ---
 *** THIS SCRIPT will ONLY back up your Plex Server Settings!  No Media will be backed up from this process!  Why?  I have a SAN (Storage Attached Network) with my media on it.  It connects via fiber channel.  If my Plex server drops dead, I can rebuild a computer to run Plex and my media is safe, but ALL of my Plex settings are GONE!  But with a little USB stick? Just reinstall Plex, then  Restore the contents to my "%LocalAppData%\Plex Media Server\" folder (Yes you can issue a command 'Explorer "%LocalAppData%\Plex Media Server\" ' and Windows Explorer will open there!  The backup will have the configuration from the disk as well as the registry entries.  There will be a .reg file.  Just double click to import AFTER restoring the 7Zip files.
 ---
 ## REQUIREMENTS
-7Zip - must have it to use.
+### 7Zip - must have it to use.
 64bit Windows - Does anyone run PMS on 32bit?  Please do not answer that!
 focus - This means it's time to pay attention.
 ---
